@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fundraising</title>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <style>
+        .header {
+
+            height: 77px;
+            background-color: rgb(197, 33, 33);
+        }
+
+        .left {
+
+            padding-top: 20px;
+            display: inline-block;
+            margin: 10px;
+
+        }
+
+        .left a {
+            color: white;
+            margin: 3px;
+            text-decoration: none;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+        }
+
+        .left a:hover {
+            background-color: black;
+            transition: .5s;
+
+        }
+
+        .mid {
+
+            display: inline-block;
+            height: 10px;
+            position: absolute;
+            top: -2px;
+            left: 553px;
+
+        }
+
+        .mid img {
+            width: 150px;
+        }
+
+        .right {
+            display: inline-block;
+            width: 250px;
+
+            position: absolute;
+            left: 1244px;
+            top: 11px;
+            margin: 5px -250px;
+        }
+
+        #btn {
+            background-color: rgb(197, 33, 33);
+            margin: 4px 10px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+        }
+
+        #btn:hover {
+            background-color: rgb(8, 8, 8);
+        }
+
+        .searchbox {
+            display: inline-block;
+            width: 241px;
+            background: transparent;
+            position: absolute;
+            left: 998px;
+            top: 26px;
+            margin: 5px -250px;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: white;
+            float: left;
+            line-height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <!--left box for nav-->
+        <div class="left">
+            <tr class="navbar">
+                <td><a href="#">Home</a></td>
+                <td><a href="#">About us</a></td>
+                <td><a href="#">Contact us</a></td>
+                <td><a href="#"> Carrer Opportunity</a></td>
+                <td><a href="#"> Program & events</a></td>
+            </tr>
+        </div>
+
+        <!--mid box for logo-->
+
+        <div class="mid">
+            <img src="logo.png" alt="">
+
+        </div>
+
+        <!--right box for search and login signup-->
+
+        <div class="right">
+            <button id="btn">login</button>
+            <button id="btn">signUp</button>
+        </div>
+        <div class="searchbox">
+            <input type="text" placeholder="search here">
+        </div>
+    </header>
+
+</body>
+
+</html>

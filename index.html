@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    
+    <style>
+  
+        
+
+        .tophead{
+            background-color: rebeccapurple;
+            overflow: auto;
+
+        }
+        .tophead .toplist{
+            float: left;
+            list-style: none;
+            margin: 10px 15px 1px 15px ;
+        }
+        .tophead .toplist .toplist2 .text {
+            font-size: larger;
+            padding-left: 50px;
+            color: white;
+        }
+        .tophead .toplist .toplist2 .contact{
+            font-size: larger;
+            text-align: center;
+            padding-left: 160px;
+            color: white;
+
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar{
+            background-color: rgb(103, 122, 110);
+            border-radius: 30px;
+            padding-top:0px;
+            margin-top: -10px;
+            
+            
+        }
+        .navbar ul{
+            overflow:auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 10px 0px 110px 0px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+        .navbar .submenu{
+            position: relative;
+            display: inline-block;
+            padding:3px 80px;
+            text-decoration: none;
+            color: white;
+            
+        }
+        .navbar .submenu .drop1{
+            background-color: rgb(29, 156, 18);
+            border-radius: 10px;
+            padding: 3px 3px;
+            text-decoration: none;
+            color: rgb(35, 51, 139);
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .navbar .submenu .dropcont1{
+            display:none;
+            position: absolute;
+            background-color:blue;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            
+        }
+        .navbar .submenu .dropcont1 a{
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+             display: block;
+            text-align: center;
+            font-size: larger;
+            background-color: wheat;
+        }
+        .navbar .submenu:hover .dropcont1{
+            display: block;
+        }
+       
+
+
+
+        .item{
+            position: relative;
+            text-align: center;
+        }
+        .owl-caption{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color:green;
+            font-size: xx-large;
+        }
+        .upcoming{
+            position: relative;
+            margin-left: 100px;
+        }
+        .events2{
+            position:absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            color:green;
+          
+        }
+        .h1{
+            font-size: 50px;
+        }
+        .h2{
+            font-size: x-large;
+        }
+
+        .dashboard{
+            background-color: wheat;
+         
+            height: 400px;
+
+        }
+        .d1{
+            font-size: 50px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: expanded;
+        }
+        .tab{
+            display: flex;
+        }
+        .col1{
+            text-align: center;
+        }
+         .head1{
+             text-align: center;
+         }
+        .para1{
+            text-align:justify;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: large;
+        }
+        .col2{
+            text-align: center;
+        }
+        .para2{
+            text-align:justify;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: large;
+        }
+        .col3{
+            text-align: center;
+        }
+        .para3{
+            text-align:justify;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: large;
+        }
+        .col4{
+            text-align: center;
+        }
+        .para4{
+            text-align:justify;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: large;
+        }
+        .btn{
+            text-align: center; 
+            background-color:chartreuse;
+            font-size: 40px;
+            margin-left: 500px;
+            color:black;
+        }
+        
+        .interview{
+            background-color: #55ACEE;
+            height: 331px;
+        }
+        .interviewtab{
+            display: flex;
+        }
+        .col1{
+            text-align: left;
+        }
+        .interview1{
+            text-align: center;
+        }
+        .para1{
+            font-size: large;
+            display: block;
+        }
+        .btn2{
+            font-size: xx-large;
+            text-align: center;
+            margin-left: auto;
+            background-color: wheat;
+        }
+
+
+
+
+
+        .footer{
+            background: rgb(104, 89, 89);
+            color: aqua;
+            height: 400px;
+            position: relative;
+        }
+        .footer .footer-content{
+            border: 1px solid red;
+            height: 350px;
+            display: flex;
+        }
+        .footer .footer-content .footersection{
+            flex:1;
+            border: 1px solid white;
+            font-size: larger;
+        }
+        .footer .footer-content .footersection .logo-text {
+            text-align: center;
+        }
+  
+        .footer .footer-content .footersection .alumni{
+            font-weight: bold;
+            color:green;
+            font-size: larger;
+        }
+        .footer .footer-content .footersection .alum{
+            text-align: center;
+        }
+        .footer .footer-content .footersection .about{
+            font-weight: bold;
+            font-size: larger;
+            color:green;
+        }
+        .footer .footer-content .footersection .abo{
+            text-align: center;
+        }
+        .footer .footer-content .footersection .acc{
+            text-align: center;
+        }
+        .footer .footer-content .footersection .account{
+            font-weight: bold;
+            color:green;
+            font-size: larger;
+        }
+
+        .footer .footer-content .footersection .social .fa {
+                padding: 6px;
+                font-size: 20px;
+                width: 20px;
+                text-align: center;
+                text-decoration: none;
+            }
+            .footer .footer-content .footersection .social .fa:hover {
+                    opacity: 0.7;
+                }
+
+            .footer .footer-content .footersection .social .fa-facebook {
+                background: #3B5998;
+                color: white;
+                }
+
+            .footer .footer-content .footersection .social .fa-twitter {
+                background: #55ACEE;
+                color: white;
+                }
+        .footer .footer-bottom{
+            background:darkgray;
+            color: brown;
+            height: 40px;
+            width: 100%;
+            text-align: center;
+            position: bottom;
+            bottom: 0px;
+            top: 0px;
+            padding-top: 20px;
+        }
+        
+        
+    </style>
+</head>
+
+<header>
+
+    <div class="tophead">
+        <ul class="toplist">
+            <li class="toplist2">
+                <a href="#"><span class="text">Email: info@university.ac.in</span></a>
+                <a href="#"><span class="contact">Contact: 123-456-789</span></a>
+
+            </li>
+        </ul>
+        <div class="search">
+            <input type="text" name="s" class="form-control input-search" placeholder="search..." autocomplete="off">
+            <button type="submit" class="lnr lnr-magnifier">Search</button>
+        <!-- </div>
+
+        <div class="button"> -->
+            <a href="signup.html"><button type="login" class="lnr lnr-magnifier">Login</button></a>
+		<a href="signup.html"><button type="login" class="lnr lnr-magnifier">Signup</button></a>
+
+            
+        </div>
+      
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li>
+                <div class="submenu">
+                    <button class="drop1">About Us<i class="fa fa-caret-down"></i></button>
+                    <div class="dropcont1">
+                        <a href="#">Contact</a>
+                        <a href="#">Directory</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">News</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li><div class="submenu">
+                <button class="drop1">Program&Events<i class="fa fa-caret-down"></i></button>
+                <div class="dropcont1">
+                    <a href="#">Sponsorship</a>
+                    <a href="#">Latest Members</a>
+                    <a href="#">Alumni profile</a>
+                    <a href="#">Alumni Login</a>
+                </div>
+            </div></li>
+
+            <li><div class="submenu">
+                    <button class="drop1">Alumni Stories<i class="fa fa-caret-down"></i></button>
+                    <div class="dropcont1">
+                        <a href="#"></a>
+                        <a href="#">Restricted Material</a>
+                        <a href="#">Mentors</a>
+                        <a href="#">Image Alignment</a>
+                    </div>
+                </div></li>
+
+            <li><div class="submenu">
+                <button class="drop1">Career Oportunity<i class="fa fa-caret-down"></i></button>
+                <div class="dropcont1">
+                    <a href="#">Apply to Job</a>
+                    <a href="#">Google Developers</a>
+                </div>
+            </div></li>
+
+            
+        </ul>
+    </nav>
+</header>
+
+
+
+<body>
+    
+
+<div class="item">
+    <img src="http://sayidan.kenzap.com/wp-content/uploads/2016/07/slider2-3.jpg" alt="HEARTY WELCOMES WITH">
+    <div class="owl-caption">
+        <div class="container">
+            <div class="content-block">
+                <h2>
+                    <span class="text-bold">HEARTY WELCOMES WITH</span> <br />
+                    <span class="text-light">A TOUCH OF RIVALRY</span>
+                </h2>
+                <!-- <a href="/hannah-my-interview-was-extraordinary-and-educative/" class="bnt bnt-theme read-story">READ STORY</a> -->
+            </div>
+        </div>
+    </div>
+</div> <br>
+
+<div class="upcoming">
+    <div class="events">
+        <img width="569" height="331" src="http://sayidan.kenzap.com/wp-content/uploads/2016/07/galery-popup-14-4-569x331.jpg" class="img-responsive animate zoomIn wp-post-image" alt="" />
+    </div>
+    <div class="events2">
+        <h1 class="h1">Upcoming Events</h1>
+        <h2 class="h2">CLUB SPONSORSHIP 2019-2020</h2>
+        <h2 class="h2">Date: 22th January 2020</h2>
+        <h2 class="h2">Venue: LM Stadium</h2>
+    </div>
+</div> 
+
+<div class="dashboard">
+    <h1 class="d1">Alumni Dashboard</h1>
+    <div class="tab">
+        <div class="col1">
+            <h1 class="head1">Checking Messages</h1>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iure facere fuga! Accusamus incidunt nisi culpa quam excepturi temporibus eius!</p>
+        </div>
+        <div class="col2">
+            <h1 class="head2">Update info</h1>
+            <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iure facere fuga! Accusamus incidunt nisi culpa quam excepturi temporibus eius!</p>
+        </div>
+        <div class="col3">
+            <h1 class="head3">Join with Alumni</h1>
+            <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iure facere fuga! Accusamus incidunt nisi culpa quam excepturi temporibus eius!</p>
+        </div>
+        <div class="col4">
+            <h1 class="head4">Search Alumni</h1>
+            <p class="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iure facere fuga! Accusamus incidunt nisi culpa quam excepturi temporibus eius!</p>
+        </div>
+    </div>
+   
+        <button class="btn">Login to Alumni Dashboard</button>
+  
+</div>  <br>
+
+
+<div class="interview">
+    <div class="interviewtab">
+        <div class="col1">
+            <img width="569" height="331" src="http://sayidan.kenzap.com/wp-content/uploads/2016/07/galery-popup-14-4-569x331.jpg" class="img-responsive animate zoomIn wp-post-image" alt="" />
+            
+        </div>
+        <div class="interview1">
+            <h1 class="h1">Alumni Interview</h1>
+            <h1 class="h2">Lorem ipsum</h1>
+            <p class="para1">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
+            <button class="btn2">See Hanna Story</button>
+        </div>
+    </div>
+</div> <br>
+
+<div class="photo">
+    <div class="photo2">
+        <div class="col1">
+            
+        </div>
+    </div>
+</div>
+
+</body>
+
+<div class="footer">
+    <div class="footer-content">
+        <div class="footersection edu">
+            <h1 class="logo-text"><span class="Awa">Education</span></h1>
+            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare.</p>
+            <div class="contact">
+                <span><i class="fas fa-phone"></i>&nbsp;Contact: 123-456-789</span><br>
+                <span><i class="fas fa-envelope"></i>&nbsp;Email: university.com</span>
+            </div>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div> 
+        </div>
+
+        <div class="footersection alu">
+            <h2 class="alum">University</h2>
+            <br>
+            <ul class="alumni">
+                <a href="#"><li>Students</li></a>
+                <a href="#"><li>Events</li></a>
+                <a href="#"><li>Gallery</li></a>
+                <a href="#"><li>News</li></a>
+            </ul>
+        </div>
+
+        <div class="footersection about">
+            <h2 class="abo">Alumni</h2>
+            <br>
+            <ul class="about">
+                <a href="#"><li>Contact</li></a>
+                <a href="#"><li>Career</li></a>
+                <a href="#"><li>About us</li></a>
+                <a href="#"><li>Apply to Job</li></a>
+            </ul>
+        </div>
+
+        <div class="footersection account">
+            <h2 class="acc">Account</h2>
+            <br>
+            <ul class="account">
+                <a href="#"><li>Profile</li></a>
+                <a href="#"><li>Stories</li></a>
+                <a href="#"><li>Password</li></a>
+                <a href="#"><li>Downloads</li></a>
+            </ul>
+        </div>
+        
+
+    </div>
+    <div class="footer-bottom">
+        &copy;2020 Alumni Association of the University
+    </div>
+
+
+</div>
+
+</html>

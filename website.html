@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>website</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+        }
+
+
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(226, 225, 220);
+        }
+
+        .slider {
+            overflow: hidden;
+            height: 560px;
+
+            position: absolute;
+            left: 100px;
+            right: 100px;
+            top: 78px;
+        }
+
+        .slider figure div {
+            float: left;
+            width: 20%;
+        }
+
+        .slider figure img {
+            width: 100%;
+            float: left;
+        }
+
+        .slider figure {
+            width: 500%;
+            position: relative;
+            animation: 20s shahid infinite;
+        }
+
+        @keyframes shahid {
+            0% {
+                left: 0%;
+            }
+
+            10% {
+                left: 0%;
+            }
+
+            12% {
+                left: -100%;
+            }
+
+            22% {
+                left: -100%;
+            }
+
+            24% {
+                left: -200%;
+
+            }
+
+            34% {
+                left: -200%;
+            }
+
+            36% {
+                left: -300%;
+            }
+
+            46% {
+                left: -300%;
+            }
+
+            48% {
+                left: -400%;
+            }
+
+            58% {
+                left: -400%;
+            }
+
+            60% {
+                left: -300%;
+            }
+
+            70% {
+                left: -300%;
+            }
+
+            72% {
+                left: -200%;
+            }
+
+            82% {
+                left: -200%;
+            }
+
+            84% {
+                left: -100%;
+            }
+
+            94% {
+                left: -100%;
+            }
+
+            96% {
+                left: 0%;
+            }
+
+            100% {
+                left: 0%;
+            }
+        }
+
+
+
+        .main {
+            margin: 0px 50px;
+            margin-left: 80px;
+        }
+
+        .card {
+            width: 20%;
+            display: inline-block;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+            border-radius: 5px;
+            margin: 2%;
+        }
+
+        .image img {
+            width: 100%;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .title {
+            color: black;
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .des {
+            color: rgb(29, 28, 28);
+            padding: 3px;
+            text-align: center;
+
+            padding-top: 10px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        button {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        .heading {
+            color: black;
+            margin-top: 605px;
+            display: inline-block;
+            margin-left: 100px;
+            font-size: 28px;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+        }
+
+        .heading1 {
+            color: black;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 100px;
+            font-size: 28px;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+        }
+
+
+        .header {
+
+            height: 77px;
+            background-color: rgb(197, 33, 33);
+        }
+
+        .left {
+
+            padding-top: -38px;
+            display: inline-block;
+            margin: 68px;
+
+        }
+
+        .left a {
+            color: white;
+            margin: 3px;
+            text-decoration: none;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+        }
+
+        .left a:hover {
+            background-color: black;
+            transition: .5s;
+
+        }
+
+        .mid {
+
+            display: inline-block;
+            height: 10px;
+            position: absolute;
+            top: -2px;
+            left: 553px;
+
+        }
+
+        .mid img {
+            width: 150px;
+        }
+
+        .right {
+            display: inline-block;
+            width: 250px;
+
+            position: absolute;
+            left: 1244px;
+            top: 11px;
+            margin: 5px -250px;
+        }
+
+        #btn {
+            background-color: rgb(197, 33, 33);
+            margin: 4px 10px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+        }
+
+        #btn:hover {
+            background-color: rgb(8, 8, 8);
+        }
+
+        .searchbox {
+            display: inline-block;
+            width: 241px;
+            background: transparent;
+            position: absolute;
+            left: 998px;
+            top: 26px;
+            margin: 5px -250px;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+        }
+
+
+
+
+        .main1 {
+            margin: 40px 50px;
+            margin-left: 106px;
+            display: flex;
+            border-radius: 5px;
+        }
+
+        .card1 {
+            padding: 10px;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+            width: 20%;
+            border-radius: 5px;
+        }
+
+        .title1 {
+            text-align: center;
+            padding: 10px;
+            color: black;
+        }
+
+        .des1 {
+            padding: 10px;
+            font-style: obli;
+            text-align: center;
+            color: black;
+        }
+
+        .button1 {
+            background-color: rgb(114, 132, 235);
+            color: black;
+            padding: 0 25px;
+            cursor: pointer;
+            line-height: 3;
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .button1:hover {
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+        }
+
+        section {
+
+            width: 1000px;
+
+            margin: -300px;
+            margin-top: -370px;
+            margin-right: -100px;
+
+        }
+
+        section .events {
+            position: relative;
+            width: 25%;
+            height: 100px;
+            float: right;
+            box-sizing: border-box;
+            margin-top: -233px;
+            top: 15px;
+        }
+
+        section .events ul {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 10%;
+        }
+
+        section .events ul li {
+            list-style: none;
+            background: #fff;
+            box-sizing: border-box;
+            height: 300px;
+            margin-top: 150px;
+            margin: 15px 0;
+        }
+
+        section .events ul li .time {
+            position: relative;
+            padding: 20px;
+            background: #262626;
+            box-sizing: border-box;
+            width: 30%;
+            height: 148%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+        }
+
+        section .events ul li:hover .time {
+            background-color: #e91e63;
+        }
+
+        section .events ul li .time h2 {
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 40px;
+            line-height: 32px;
+        }
+
+        section .events ul li .time h2 span {
+            font-size: 30px;
+        }
+
+        section .events ul li .details {
+            padding: 17px;
+            background: #fff;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+
+        section .events ul li .details h2 {
+            position: relative;
+            font-size: 22px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        section .events ul li .details p {
+            position: relative;
+            font-size: 15px;
+            margin: 10px 0 0;
+            padding: 0px;
+        }
+
+        .viewdetails {
+            display: block;
+
+            padding: 10px 15px;
+            border: 2px solid #262626;
+            margin-top: 15px;
+            font-size: 13px;
+            transition: .5s;
+            float: left;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .viewdetails:hover {
+            background: #e91e63;
+            color: #fff;
+            border-color: #e91e63;
+        }
+
+        section .events {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            margin-left: 350px;
+            float: left;
+            box-sizing: border-box;
+            margin-top: 100px;
+        }
+
+        section .events ul {
+            position: relative;
+            top: 33%;
+            transform: translateY(-50%);
+            margin: 10%;
+        }
+
+        section .events ul li {
+            list-style: none;
+            background: #fff;
+            box-sizing: border-box;
+            height: 300px;
+            margin-top: 150px;
+            margin: 15px 0;
+        }
+
+        section .events ul li .time {
+            position: relative;
+            padding: 20px;
+            background: #262626;
+            box-sizing: border-box;
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+        }
+
+        section .events ul li:hover .time {
+            background-color: #e91e63;
+        }
+
+        section .events ul li .time h2 {
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 40px;
+            line-height: 32px;
+        }
+
+        section .events ul li .time h2 span {
+            font-size: 30px;
+        }
+
+        section .events ul li .details {
+            padding: 17px;
+            background: #fff;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+
+        section .events ul li .details h2 {
+            position: relative;
+            font-size: 22px;
+            margin: 0px;
+            padding: 0px;
+            color: black;
+        }
+
+        section .events ul li .details p {
+            position: relative;
+            font-size: 15px;
+            margin: 10px 0 0;
+            padding: 0px;
+            color: black;
+        }
+
+        .viewdetails {
+            display: block;
+
+            padding: 10px 15px;
+            border: 2px solid #262626;
+            margin-top: 15px;
+            font-size: 13px;
+            transition: .5s;
+            float: left;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        
+        }
+
+        .viewdetails:hover {
+            background: #e91e63;
+            color: #fff;
+            border-color: #e91e63;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #232323;
+            color: white;
+            text-align: center;
+            height: 80px;
+        }
+
+
+        .social-icons {
+            text-align: center;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            list-style-type: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+        }
+
+        .social-icons li a {
+            border-bottom: none;
+        }
+
+        .social-icons li img {
+            width: 70px;
+            height: 70px;
+            margin-right: 20px;
+        }
+
+        .funds {
+            color: black;
+
+            margin-left: 90px;
+            margin-top: 15px;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: evenly;
+
+
+        }
+
+        .heading1 {
+            margin-bottom: 10px;
+            color: black;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 100px;
+            font-size: 28px;
+            box-shadow: 2px 2px 20px rgb(75, 75, 75);
+        }
+
+        .funds img {
+            height: 150px;
+            width: 250px;
+            margin-left: 10px;
+            margin-top: 10px;
+
+        }
+
+        .funds .card1 {
+
+            display: inline-block;
+            margin-top: -26px;
+            margin: 10px;
+            position: relative;
+
+        }
+
+        .card2 {
+
+            background-color: rgb(197, 190, 190);
+            width: 1000px;
+            margin: 10px 95px;
+
+        }
+
+        .card2 img {
+            height: 300px;
+            width: 300px;
+            margin-left: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <figure>
+            <div class="slide">
+                <img src="index.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="index1.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="index2.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="index3.jpeg" alt="">
+            </div>
+        </figure>
+    </div>
+
+
+
+    <header class="header">
+        <!--left box for nav-->
+        <div class="left">
+            <tr class="navbar">
+                <td><a href="#">Home</a></td>
+                <td><a href="#">About us</a></td>
+                <td><a href="#">Contact us</a></td>
+                <td><a href="#"> Carrer Opportunity</a></td>
+                <td><a href="#"> Program & events</a></td>
+            </tr>
+        </div>
+
+        <!--mid box for logo-->
+
+        <div class="mid">
+            <img src="logo.png" alt="">
+
+        </div>
+
+        <!--right box for search and login signup-->
+
+        <div class="right">
+            <button id="btn">login</button>
+            <button id="btn">signUp</button>
+        </div>
+        <div class="searchbox">
+            <input type="text" placeholder="search here">
+        </div>
+    </header>
+
+
+    <div class="heading">
+        <h3>Our Top Alumni's</h3>
+    </div>
+
+
+
+    <div class="main">
+
+        <!--cards -->
+
+        <div class="card">
+
+            <div class="image">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+            </div>
+            <div class="title">
+                <h1>Software Developer at Google</h1>
+            </div>
+            <div class="des">
+                <p>
+                    Studied Computer Science and Egineering at IIT Goa</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+
+        <!--cards -->
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Software Developer at Microsoft</h1>
+            </div>
+            <div class="des">
+                <p>Studied Computer Science and Egineering at IIT Goa</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <!--cards -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2015/11/07/11/41/lake-1031405_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Owner and CEO of majdoor.com</h1>
+            </div>
+            <div class="des">
+                <p>Studied Information Technology at IIT Goa</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Software Developer at Microsoft</h1>
+            </div>
+            <div class="des">
+                <p>Studied Computer Science and Egineering at IIT Goa</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+    </div>
+    <div class="heading1">
+        <h3>Apply for Jobs and Internships</h3>
+    </div>
+
+    <div class="main1">
+
+        <!--cards -->
+
+        <div class="card1">
+            <div class="title1">
+                <h4>Internships at Google</h4>
+            </div>
+            <div class="des1">
+                <p>Location: Bangalore <br>Salary:</p>
+
+                <button class="button1">Apply</button>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="title1">
+                <h4>Software Developer jobs at Microsoft</h4>
+            </div>
+            <div class="des1">
+                <p>Location: Bangalore <br>Salary:</p>
+
+                <button class="button1">Apply</button>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="title1">
+                <h4>Software Developer jobs at Amazon</h4>
+            </div>
+            <div class="des1">
+                <p>Location: Hyderabad <br>Salary:</p>
+
+                <button class="button1">Apply</button>
+            </div>
+        </div>
+
+
+
+
+        <section>
+
+            <div class="events">
+                <ul>
+                    <li>
+                        <div class="time">
+                            <h2>24 <br><span>June</span></h2>
+                        </div>
+                        <div class="details">
+                            <h2>Event Name</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque natus, ipsam dolore a
+                                quam,
+                                amet aspernatur exercitationem quaerat autem eos rerum, consectetur sit.</p>
+                        </div>
+                        <div class="viewdetails">
+                            <a href="#">view details..</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    </section>
+    <div class="heading1">
+        <h2>Fund raising</h2>
+    </div>
+    <div class="funds">
+        <div class="card1">
+            <img src="image1.png" alt="">
+            <h4>funds for scholorship</h4>
+            <p>The fund is for providing the scholorship for various students who can't afford thier fees. </p>
+            <button class="button1">Know more...</button>
+        </div>
+
+        <div class="card1">
+            <img src="image2.jpg" alt="">
+            <h4>funds for facility</h4>
+            <p>The fund is for updating the facility in colleges for betterment of students</p>
+            <button class="button1">Know more...</button>
+        </div>
+
+        <div class="card1">
+            <img src="image3.jpg" alt="">
+            <h4>funds for cultural events</h4>
+            <p>The fund is for managing the cultural events in colleges</p>
+            <button class="button1">Know more...</button>
+        </div>
+    </div>
+    
+    <div class="heading1">
+        <h2>Photo gallary</h2>
+    </div>
+    <div class="card2">
+        <img src="index.jpeg" alt="">
+        <img src="index1.jpeg" alt="">
+        <img src="index2.jpeg" alt="">
+        <img src="index3.jpeg" alt="">
+        <img src="index.jpeg" alt="">
+        <a href="#" style="color: blue;">view all...</a>
+    </div>
+
+
+
+    <!-- 
+    <div class="footer">
+        <ul class="social-icons">
+            <li><a href="http://www.facebook.com"><img src=socialmedia.png /></a></li>
+            <li><a href="http://www.twitter.com"><img src=socialicon.jpeg /></a></li>
+            <li><a href="http://www.youtube.com"><img src='path_to_your_image' /></a></li>
+        </ul>
+    </div> -->
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>Alumni Details Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+  }
+  .wrapper{
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 100px;
+  }
+  .contact-form{
+    display: flex;
+    max-width: 15000px;
+    max-height: 4000px;
+    margin: 0 auto;
+    background: rgba(156, 158, 144, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  }
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+  }
+  .input-fields,
+.msg{
+  width: 30%;
+}
+
+.cmn{
+  border: 0px;
+  border-bottom: 3px solid rgb(5, 5, 32);
+  background: transparent;
+  padding: 10px;
+  margin: 10px;
+}
+  .gen{
+    margin-left: 15px;
+  }
+
+  .input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+ 
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #090a0a;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #c5ecfd;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #c5ecfd;
+  }
+  .msg textarea{
+    height: 212px;
+  }
+   
+
+  .btns{
+    text-align: center;
+  }
+
+  .btn, .reset {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 2.5rem;
+}
+
+@media screen and (max-width: 600px){
+    .contact-form{
+      flex-direction: column;
+    }
+    .msg textarea{
+      height: 80px;
+    }
+    .input-fields,
+    .msg{
+      width: 100%;
+    }}
+ 
+    
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div class="wrapper">
+            <div class="contact-form">
+               <div class="input-fields">
+        <input class="cmn" type="text" placeholder ="Full Name">
+        <br>
+        <input class="cmn" type="text" placeholder ="Mother's Name">
+        <br>
+        <input class="cmn" type="text" placeholder ="Father's Name">
+        <br>
+        <div class="gen">
+            Gender:  <input class="gen" type="radio" name="MyGender"> Male<input class="gen" type="radio" name="MyGender">Female
+        </div>
+        <br>
+        <input class="cmn" type="number" placeholder ="Contact Number">
+        <br>
+        <select class="cmn" name="Religion">
+            <option value="Islam">Islam</option>
+            <option value="Hinduism">Hinduism</option>
+            <option value="Christian">Christian</option>
+            <option value="Buddhism">Buddhism</option>
+            <option value="Sikkh">Sikkh</option>
+            <option value="other">other</option>
+        </section>
+        <br>
+        <input class="cmn" type="date" placeholder ="Date of Birth">
+        <br>
+        <select class="cmn" name="Nationality">
+            <option value="Ind">India</option>
+            <option value="Aust">Australia</option>
+            <option value="Ame">America</option>
+            <option value="Eng">England</option>
+            <option value="other">other</option>
+        </section>
+        <br>
+        <input class="cmn class="cmn"" type="textarea" placeholder ="Permanent Address">
+        <br>
+        <select class="cmn" name="Community">
+            <option value="obc">OBC</option>
+            <option value="sc">SC</option>
+            <option value="st">ST</option>
+            <option value="gen">General</option>
+        </section>
+        <br>
+        <input class="cmn" type="text" placeholder ="Pin Code">
+        <br>
+        <select class="cmn" name="state">
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Uttrakhand">Uttrakhand</option>
+            <option value="Bihar">Bihar</option>
+            <option value="other">other</option>
+        </section>
+        <br>
+        <input class="cmn" type="text" placeholder ="College Name">
+        <br>
+        <select class="cmn" name="Degree">
+            <option value="bt">B.tech</option>
+            <option value="mba">M.B.A</option>
+            <option value="bba">B.B.A</option>
+            <option value="ba">B.A</option>
+            <option value="ma">M.A</option>
+            <option value="other">other</option>
+        </section>
+        <br>
+        <input class="cmn" type="text" placeholder ="Year of Passing">
+        <br>
+        <input class="cmn" type="text" placeholder ="Average Percentage">
+        <br>
+        <select class="cmn" name="Current status">
+            <option value="Islam">employed</option>
+            <option value="Hinduism">self-employed</option>
+            <option value="Christian">unemployed</option>
+            <option value="other">other</option>
+        </section> 
+        <br> <!-- i.e wheather he or she is employed/unemployed/self employed-->
+        <input class="cmn" type="text" placeholder ="Organisation Name"> <br>
+      
+               <div class="btns">
+                   <button class="btn" type="submit">Send</button>
+                   <button class="reset" type="reset">Reset All</button>
+                <!-- <input type="reset" value="" id="style2" class=" buttonfont"> -->
+               </div>
+               </div>
+
+         </div>
+               
+            </div>
+        <div>
+    </form>
+</body>
+</html>
